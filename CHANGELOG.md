@@ -57,9 +57,9 @@ So for example, `observable.shallowArray([todo1, todo2])` will create an observa
 
 ### Shallow properties
 
-The `@observable` decorator can still be used to introduce observable properties. And like in MobX 2, it will automatically convert it's values.
+The `@observable` decorator can still be used to introduce observable properties. And like in MobX 2, it will automatically convert its values.
 
-However, sometimes you want to create an observable property that does not convert it's _value_ into an observable automatically.
+However, sometimes you want to create an observable property that does not convert its _value_ into an observable automatically.
 Previously that could be written as `@observable x = asReference(value)`.
 
 ### Structurally comparison of observables have been removed
@@ -224,7 +224,7 @@ automatically into computed values; they will be treated the same as function wi
 An observable _reference_ to the function will be made and the function itself will be preserved.
 See for more details [#532](https://github.com/mobxjs/mobx/issues/532)
 
-N.B. If you want to introduce actions on an observable that modify it's state, using `action` is still the recommended approach:
+N.B. If you want to introduce actions on an observable that modify its state, using `action` is still the recommended approach:
 
 ```javascript
 observable({
